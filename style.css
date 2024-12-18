@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+.marquee {
+  background-color: #fbc02d;
+  color: #333;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  height: 35px;
+  padding-right: 30px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.location button {
+  border: none;
+  background-color: rgb(231, 3, 3);
+  width: 100px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 20px 20px 20px 20px;
+  color: rgb(255, 255, 255);
+}
+
+.head {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 33%;
+  height: 13vh;
+}
+.head img {
+  height: 75px;
+}
+.head .search input {
+  padding: 14px 5px 14px 5px;
+  background-color: rgb(236, 230, 230);
+  font-size: 15px;
+  border: none;
+}
+.head .search button {
+  background-color: red;
+  padding: 15px 10px 14px 10px;
+  border: none;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fbc02d;
+  height: 4vh;
+}
+#navbar nav {
+  display: flex;
+}
+#navbar nav ul {
+  display: flex;
+  gap: 50px;
+}
+#navbar nav ul li {
+  list-style: none;
+}
+#navbar nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#section1 {
+  margin-top: 20px;
+  background: url(https://www.haldirams.com/media/wysiwyg/Sugar_Free_Web_1920x600px_1.jpg) no-repeat center center/cover;
+  height: 70vh;
+}
+
+#section2 {
+  margin-top: 70px;
+}
+#section2 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.box {
+  border: 1px solid rgb(206, 202, 202);
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+.box img {
+  height: 250px;
+}
+
+.boxes {
+  margin-left: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.boxes .price {
+  text-align: center;
+}
+.boxes .price p {
+  padding-top: 10px;
+}
+.boxes .price p button {
+  background-color: orangered;
+  padding: 15px 90px 15px 90px;
+  border: none;
+}
+.boxes .price p button a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn button {
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 15px 30px 15px 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.cards img {
+  width: 400px;
+  height: 400px;
+}
+.cards .cardprice {
+  text-align: center;
+}
+
+#section5 h1 {
+  font-size: 50px;
+}
+
+#section6 {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#section6 img {
+  width: 620px;
+  height: 350px;
+}
+
+.horizontalimg img {
+  width: 98.9%;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+
+#about {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  gap: 33px;
+}
+#about h1 {
+  font-size: xx-large;
+}
+#about p {
+  font-size: large;
+  font-family: arial;
+  font-weight: 50px;
+}
+#about button {
+  font-size: larger;
+  padding: 10px 10px 10px 10px;
+  background-color: orangered;
+  border: none;
+}
+
+#befooter .sign {
+  height: 20vh;
+  background-color: #fbc02d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+#befooter .sign div input {
+  font-size: large;
+  padding: 10px 30px 10px 6px;
+  border: none;
+}
+#befooter .sign div button {
+  font-size: large;
+  padding: 10px 7px 10px 7px;
+  border: none;
+  background-color: orangered;
+  color: white;
+}
+#befooter .sign p .newsletter {
+  font-size: xx-large;
+}
+#befooter .sign p .updates {
+  font-size: large;
+}
+
+footer {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 70px;
+  padding-top: 40px;
+  gap: 50px;
+}
+footer div {
+  line-height: 35px;
+}
+footer div img {
+  width: 270px;
+}
+footer div p span {
+  font-size: larger;
+  font-weight: 600;
+}
+footer div p a {
+  font-size: larger;
+  color: black;
+}
+footer div ul li {
+  list-style: none;
+  font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+  .marquee {
+    font-size: 10px;
+  }
+  .marquee .location button {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+  .head {
+    width: 100vw;
+    position: relative;
+    top: -13px;
+    gap: 5px;
+  }
+  .head .search {
+    width: 30vw;
+  }
+  .head .search input {
+    display: none;
+  }
+  .head .search button {
+    width: 50px;
+    border-radius: 50%;
+  }
+  .head .search button i {
+    font-size: 20px;
+  }
+  .head div img {
+    display: none;
+  }
+  .head .icons {
+    border: 1px solid #c6c6c6;
+    padding: 0px;
+    border-radius: 20px;
+    background-color: #e3e3e3;
+  }
+  .head .icons i {
+    font-size: 1.2rem;
+    margin: 5px;
+    padding: 6px;
+    padding: 11px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 50%;
+  }
+  .head .icons i:hover {
+    background-color: #fff;
+  }
+  #navbar {
+    position: relative;
+    top: -30px;
+    height: auto;
+    overflow-x: scroll;
+  }
+  #navbar nav ul.navs {
+    gap: 15px;
+    padding: 10px;
+  }
+  #navbar nav ul.navs li {
+    width: 130px;
+  }
+  #navbar nav ul.navs li a {
+    font-size: 14px;
+  }
+  #navbar nav ul.navs li a i {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #section1 {
+    height: 14vh;
+    position: relative;
+    top: -30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  .boxes {
+    flex-direction: column;
+    position: relative;
+    left: -119px;
+  }
+  .boxes .price {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}/*# sourceMappingURL=style.css.map */
